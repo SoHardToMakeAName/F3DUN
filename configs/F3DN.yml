@@ -1,0 +1,12 @@
+n_feats: 64
+n_threeUnit: 
+batch_size: 16
+decay_start: 1
+decay_rate: 0.5
+decay_step: 35
+epochs: 200
+loss: 1*L1+0.05*SAM
+skip_threshold: 1000
+weight_clip: 0
+save_dir: ./trained_model/F3DN
+ckp_dir: ./checkpoints/F3DN
