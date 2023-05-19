@@ -9,6 +9,7 @@ Official implementation for paper *Rethinking 3D-CNN in Hyperspectral Image Supe
 2. Run *prepare_cave.py* or *prepare_Harvard.py* to generate data for training, validation and test. Remeber to place the generated data to a new folder called *datasets* in the same folder of *mains.py*.
 3. Run the command below:
 ```
+python -u mains.py train --name "F3DN" --model_config "configs/F3DN.yml" --n_blocks 4 --dataset_name CaveL --n_scale 4 --seed 3000 --plateau
 python -u mains.py train --name "F3DN" --model_config "configs/F3DN.yml" --n_blocks 4 --dataset_name Harvard --n_scale 4 --seed 3000 --plateau
 ```
 If you find this repository helpful, please cite our paper.
