@@ -209,7 +209,6 @@ def train(args):
         else:
             print("=> no checkpoint found at '{}'".format(model_name))
     net.to(device).train()
-    print('model: #params={}'.format(utils.compute_num_params(net, text=True)))
     # exit(0)
 
     # loss functions to choose
